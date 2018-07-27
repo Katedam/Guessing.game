@@ -7,38 +7,34 @@
     <title>About Me</title>
 </head>
 <body>
+    <h1>Kate D.</h1>
     <h1>Fun facts about me:</h1>
-    <ul type="circles">
+    <ul type="circle">
         <li>I have an MFA in ceramics</li>
         <li>I was born in TX</li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>I have a Schnepherd (German Shepherd/Giant Schnauzer) dog named Kaiya.</li>
+        <li>I go on a lot of roadtrips</li>
+        <li>I am currently a student at Alchemy Code Lab</li>
     </ul>
     
-    <div id="questions">
-        <h3>Guessing Game Answers</h3>
-        <h4>When I was driving down the "loneliest road" in Nevada, 
-            <br>I saw a wolverine crossing the road.</h4>
-        <h2>TRUE</h2>
-        <h4>Growing up I had 1 dog, 3 cats, 2 ducks, 3 box turtles, an iguana, 
-            <br>an anole lizard and some goldfish all at the same time.</h4>
-        <h2>TRUE</h2>
-        <h4>I used to be a competative skier when I was younger and 
-            <br>almost qualified for the Olympics.</h4>
-        <h2>FALSE</h2>
-    </div>
-    <!--<button id="submitAnswers"></button>
-    <div id="results">
-
-    </div>-->
+    <h3>Guessing Game Answers</h3>
+    <h4>When I was driving down the "loneliest road" in Nevada, 
+        <br>I saw a wolverine crossing the road.</h4>
+    <h2>TRUE</h2>
+    <h4>Growing up I had 1 dog, 3 cats, 2 ducks, 3 box turtles, an iguana, 
+        <br>an anole lizard and some goldfish all at the same time.</h4>
+    <h2>TRUE</h2>
+    <h4>I used to be a competative skier when I was younger and 
+        <br>almost qualified for the Olympics.</h4>
+    <h2>FALSE</h2>
+   
     <script type="text/javascript">
-        var questionOne = prompt('True or False: When I was driving down the "loneliest road" in Nevada, I saw a wolverine crossing the road. True or False?');
+        var questionOne = prompt('True or False: When I was driving down the "loneliest road" in Nevada, I saw a wolverine crossing the road.');
         if (questionOne === "true") {
-            alert("This totally happened! Even though the last known wolverine sighting in that region was 1965!");
+            alert("Yes, this totally happened! Even though the last known wolverine sighting in that region was in the 1920s!");
             console.log("correct");
         } else {
-            alert("Wrong! This totally happened! Even though the last known wolverine sighting in that region was 1965!");
+            alert("Wrong! This totally happened! Even though the last known wolverine sighting in that region was in the 1920s!");
             console.log("nope, that one's true! :-P");
         }
         var questionTwo = prompt('True or False: Growing up I had 1 dog, 3 cats, 2 ducks, 3 box turtles, an iguana, an anole lizard and some goldfish all at the same time.');
@@ -64,14 +60,10 @@
             guessNum = prompt('Try a different number:');
             console.log("Try again...");
         }
-        if (guessNum === randomNum) {
+        if (guessNum == randomNum) {
             alert("Sweet, good guess!");
             console.log("Sweet, good guess!");
         }
-                                
-                
-            
-     
     </script>
 </body>
 </html>

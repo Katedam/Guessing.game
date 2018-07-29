@@ -29,7 +29,8 @@
     <h2>FALSE</h2>
    
     <script type="text/javascript">
-        var questionOne = prompt('True or False: When I was driving down the "loneliest road" in Nevada, I saw a wolverine crossing the road.');
+        function guessingGame () {
+           var questionOne = prompt('True or False: When I was driving down the "loneliest road" in Nevada, I saw a wolverine crossing the road.');
         if (questionOne === "true") {
             alert("Yes, this totally happened! Even though the last known wolverine sighting in that region was in the 1920s!");
             console.log("correct");
@@ -52,18 +53,27 @@
         } else {
             alert("HAHA, I wish! Naw I learned to ski as an adult.")
             console.log("nope, that one's false! I learned to ski as an adult :-P");
+        } 
         }
         
-        var randomNum = Math.floor(Math.random() * 10 ) + 1;
-        var guessNum = prompt('Now I am going to think of a random number between 1-10. Can you guess what it is?');
-        while (randomNum != guessNum) {
-            guessNum = prompt('Try a different number:');
-            console.log("Try again...");
-        }
-        if (guessNum == randomNum) {
+    
+        function guessTheNum() {
+            var randomNum = Math.floor(Math.random() * 10) + 1;
+            var guessNum = prompt('Now I am going to think of a random number between 1-10. Can you guess what it is?');
+            while (guessNum != randomNum) {
+                if (guessNum > randomNum) {
+                    guessNum = prompt('That number is too high. Try again!');
+                    console.log("That number is too high. Try again!");
+                } else if (guessNum < randomNum) {
+                    guessNum = prompt("That number is too low. Try again!");
+                }
+            }
             alert("Sweet, good guess!");
             console.log("Sweet, good guess!");
-        }
+            }
+        
+        
+
     </script>
 </body>
 </html>

@@ -19,6 +19,8 @@
     
     <h2>Get to know me better. Play <em>Two Truths and a Lie</em>!</h2>
     <input type="button" value="Play Game" onclick="guessingGame()"><br>
+
+    <h2>Just for fun, play this random number guessing game:  <span><input type="button" value="Guess a Number" onclick="guessTheNum()"><br></span></h2>
     <!--<h3>Guessing Game Answers</h3>
     <h4>When I was driving down the "loneliest road" in Nevada, 
         <br>I saw a wolverine crossing the road::True</h4>
@@ -31,32 +33,37 @@
 
    
     <script type="text/javascript">
+    
         function guessingGame () {
+            var rightAnswer = 0;
             var questionOne = prompt('Truth or Lie: When I was driving down the "loneliest road" in Nevada, I saw a wolverine crossing the road.');
-            //var makeLowercase = questionOne.toLowerCase();
-            if ((questionOne.toLowerCase == "true") || (questionOne.toLowerCase == "truth")) {
+            if ((questionOne.toLowerCase() == "true") || (questionOne.toLowerCase() == "truth")) {
                 alert("Yes, this totally happened! Even though the last known wolverine sighting in that region was in the 1920s!");
+                rightAnswer++;
                 console.log("correct");
             } else {
                 alert("Wrong! This totally happened! Even though the last known wolverine sighting in that region was in the 1920s!");
                 console.log("nope, that one's true! :-P");
             }
             var questionTwo = prompt('Truth or Lie: Growing up I had 1 dog, 3 cats, 2 ducks, 3 box turtles, an iguana, an anole lizard and some goldfish all at the same time.');
-                if ((questionTwo.toLowerCase == "true") || (questionTwo.toLowerCase == "truth")) {
+            if ((questionTwo.toLowerCase() == "true") || (questionTwo.toLowerCase() == "truth")) {
                 alert("Ding-ding-ding-ding! Yep, I'm definitely an animal lover");
+                rightAnswer++;
                 console.log("correct");
             } else {
                 alert("Oops, wrong! I am definitely an animal lover")
                 console.log("nope, that one's true! :-P");
             }
             var questionThree = prompt('Truth or Lie: I used to be a competative skier when I was younger and almost qualified for the Olympics.');
-            if ((questionThree.toLowerCase == "false") || (questionThree.toLowerCase == "lie")) {
+            if ((questionThree.toLowerCase() == "false") || (questionThree.toLowerCase() == "lie")) {
                 alert("You're right, I'm not a natural athlete but I did learn to ski about 5 years ago and I love it!");
+                rightAnswer++;
                 console.log("correct");
             } else {
                 alert("HAHA, I wish! Naw I learned to ski as an adult.")
                 console.log("nope, that one's false! I learned to ski as an adult :-P");
             } 
+            alert("You got " + rightAnswer + " out of 3.")
         }
         
     

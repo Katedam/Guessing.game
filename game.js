@@ -26,3 +26,20 @@ function guessTheNum() {
     submitAnswer.innerHTML = "Nice";
     console.log("user clicked guessed number");
 }
+
+function guessVeggies() {
+    var veggies = ['zucchini', 'green beans', 'tomatoes', 'peppers', 'kale', 'lettuce', 'squash'];
+    var guessVeg = prompt('What kinds of delicious veggies do I have in my garden?')
+    if (veggies.includes(guessVeg)) {
+        console.log("user guessed some veggies");
+    } else {
+        console.log('no good');
+    }
+}
+    /*for(i = 0; i < veggies.length; i++) {
+        var guessVeg = prompt('What kinds of delicious veggies do I have in my garden?');
+        console.log("user guessed some veggies");
+    }
+    var submitVeg = document.getElementById('veggies');
+    submitVeg.innerHTML = "Nom nom nom, thanks for playing";
+}*/

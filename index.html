@@ -21,22 +21,25 @@
     </div>
    
     <h2>Get to know me better. Play <em>Two Truths and a Lie</em>!</h2>
-    <p id="wolverineQ">When I was driving down the "loneliest road" in Nevada,I saw a wolverine crossing the road  
+    <p>When I was driving down the "loneliest road" in Nevada,I saw a wolverine crossing the road  
         <span>
-            <input type="text" value="Truth or lie?">
-            <input type="button" value="Guess" onclick="guessTruth()">
+            <input type="button" value="Truth" onclick="rightAnswer('wolverine')">
+            <input type="button" value="Lie" onclick="wrongAnswer('wolverine')">
+            <p id="wolverine"></p>
         </span>
     </p>
-    <p id="soManyPetsQ">Growing up I had 1 dog, 3 cats, 2 ducks, 3 box turtles, an iguana, an anole lizard and some goldfish all at the same time  
+    <p>Growing up I had 1 dog, 3 cats, 2 ducks, 3 box turtles, an iguana, an anole lizard and some goldfish all at the same time  
         <span>
-            <input type="text" value="Truth or lie?">
-            <input type="button" value="Guess" onclick="guessTruth()">
+            <input type="button" value="Truth" onclick="rightAnswer('pets')">
+            <input type="button" value="Lie" onclick="wrongAnswer('pets')">
+            <p id="pets"></p>
         </span>
     </p>
-    <p id="olympicSkierQ">I used to be a competative skier when I was younger and almost qualified for the Olympics  
+    <p>I used to be a competative skier when I was younger and almost qualified for the Olympics  
         <span>
-            <input type="text" value="Truth or lie?">
-            <input type="button" value="Guess" onclick="guessLie()">
+            <input type="button" value="Truth" onclick="wrongAnswer('olympics')">
+            <input type="button" value="Lie" onclick="rightAnswer('olympics')">
+            <p id="olympics"></p>
         </span>
     </p>
     <h2>Just for fun, play this random number guessing game:   <span><input type="button" value="Guess a Number" onclick="guessTheNum()"></span></h2>
@@ -68,6 +71,6 @@
     <h4>I used to be a competative skier when I was younger and 
         <br>almost qualified for the Olympics::False</h4>-->
 
-    <script type="text/javascript"></script>
+    <script type="text/javascript" src="game.js"></script>
 </body>
 </html>

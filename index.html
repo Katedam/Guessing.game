@@ -25,28 +25,33 @@
         <span>
             <input type="button" value="Truth" onclick="rightAnswer('wolverine')">
             <input type="button" value="Lie" onclick="wrongAnswer('wolverine')">
-            <p id="wolverine"></p>
+            <p class="response" id="wolverine"></p>
         </span>
     </p>
     <p>Growing up I had 1 dog, 3 cats, 2 ducks, 3 box turtles, an iguana, an anole lizard and some goldfish all at the same time  
         <span>
             <input type="button" value="Truth" onclick="rightAnswer('pets')">
             <input type="button" value="Lie" onclick="wrongAnswer('pets')">
-            <p id="pets"></p>
+            <p class="response" id="pets"></p>
         </span>
     </p>
     <p>I used to be a competative skier when I was younger and almost qualified for the Olympics  
         <span>
             <input type="button" value="Truth" onclick="wrongAnswer('olympics')">
             <input type="button" value="Lie" onclick="rightAnswer('olympics')">
-            <p id="olympics"></p>
+            <p class="response" id="olympics"></p>
         </span>
     </p>
     <h2>Can you guess some of the veggies I'm growing in my garden?  </h2>
     <input type="button" value="Guess some Vegetation" onclick="guessVeggies()">
-    <p id="veggies"></p>
-    <h2>Guess a random number:   <span><input type="button" value="Guess" onclick="guessTheNum()"></span></h2>
-    <p id="number"></p>
+    <p class="response" id="guessVeg"></p>
+
+    <h2>Guess a random number:   
+        <span>
+            <input type="button" value="Guess" onclick="guessTheNum()">
+        </span>
+    </h2>
+    <p class="response" id="number"></p>
     <div class="gallery">
         <img src="http://i622.photobucket.com/albums/tt310/Katerj33/IMG_1414_1.jpg" border="0" alt="Randy and Kaiya standing on a hill near Horseshoe Bend">
     </div>

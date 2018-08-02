@@ -23,19 +23,32 @@ function guessTheNum() {
         }
     }
     var submitAnswer = document.getElementById("number");
-    submitAnswer.innerHTML = "Nice";
+    submitAnswer.innerHTML = "Nice guess";
     console.log("user clicked guessed number");
 }
 
 function guessVeggies() {
     var veggies = ['zucchini', 'green beans', 'tomatoes', 'peppers', 'kale', 'lettuce', 'squash'];
-    var guessVeg = prompt('What kinds of delicious veggies do I have in my garden?')
-    if (veggies.includes(guessVeg)) {
-        console.log("user guessed some veggies");
-    } else {
-        console.log('no good');
+    for (var i = 0; i < 1; i++) {
+        var vegPrompt = prompt('What kinds of delicious veggies do I have in my garden?');
+        if (vegPrompt == veggies[i]) {
+            var goodGuess = document.getElementById("guessVeg");
+            goodGuess.innerHTML = "Nom nom nom! Good guess, click again to guess more veggies.";
+            console.log("user picked something growing in my garden");
+        } else {
+            var goodGuess = document.getElementById("guessVeg");
+            goodGuess.innerHTML = "So tasty but not growing in my garden this year. click again to try another guess.";
+            console.log("user chose a vegetable that isn't in my garden");
+        }
     }
+    
+    //if (veggies.includes(guessVeg)) {
+      //  console.log("user guessed some veggies");
+    //} else {
+      //  console.log('no good');
+    //}
 }
+
     /*for(i = 0; i < veggies.length; i++) {
         var guessVeg = prompt('What kinds of delicious veggies do I have in my garden?');
         console.log("user guessed some veggies");

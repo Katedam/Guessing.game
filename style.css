@@ -22,3 +22,18 @@ div.gallery img {
     width: 100%;
     height: auto;
 }
+
+.response {
+    width: 10%;
+    margin-left: 45%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgb(236, 236, 235);
+    color: rgba(167, 64, 5, 0.822);
+}
+
+#guessVeg.response {
+    width: 60%;
+    margin-left: 20%;
+}

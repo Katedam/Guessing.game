@@ -15,6 +15,7 @@ h1 {
     margin-right: 50%;
     text-align: left;
     border: 1px dotted;
+    border-radius: 50px;
     /*grid-area: list;*/
 }
 
@@ -32,19 +33,20 @@ h1.facts {
     margin-bottom: 0%;
     padding: 0.75em;
     font-size: 12px;
+    border-radius: 50px;
     /*grid-area: vegGame;*/
 }
 
 .number {
-    width: 25%;
-    height: 25%;
+    width: 150px;
+    height: 150px;
     color: rgb(44, 109, 87);
     background-color: rgb(255, 223, 204);
     margin-top: 1em;
     margin-left: 2em;
     padding: 0.75em;
     font-size: 12px;
-
+    border-radius: 75px;
     /*grid-area: number;*/
 }
 
@@ -55,6 +57,7 @@ h1.facts {
     margin-top: 1em;
     margin-right: 1em;
     border: #FFFFFF 0.5em solid;
+    border-radius: 50px;
     padding: 1em;
     background-color:  rgba(44, 109, 87, 0.651);
     float: right;
@@ -76,18 +79,26 @@ div.gallery img {
 }
 
 .response {
-    width: 20%;
+    width: 25%;
+    margin-left: 38.5%;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
     font-weight: bold;
     background-color: rgb(236, 236, 235);
     color: rgba(167, 64, 5, 0.822);
+    border-radius: 5px;
 }
 
-#guessVeg.response {
+#number.response {
     width: 60%;
-    margin-left: 20%;
+    margin-left:20%;
+}
+#guessVeg.response {
+    width: 90%;
+    text-align: center;
+    margin: 5%;
+    border-radius: 20px;
 }
 
 /*.grid {

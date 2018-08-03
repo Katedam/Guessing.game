@@ -1,4 +1,3 @@
-
 function rightAnswer (answerId) {
     var submitAnswer = document.getElementById(answerId);
     submitAnswer.innerHTML = "Right!";
@@ -29,7 +28,7 @@ function guessTheNum() {
 
 function guessVeggies() {
     var veggies = ['zucchini', 'green beans', 'tomatoes', 'peppers', 'kale', 'lettuce', 'squash'];
-    var vegPrompt = prompt('What kinds of delicious veggies do I have in my garden?');
+    var vegPrompt = prompt('Guess one of the delicious veggies I have in my garden:').toLowerCase();
     for (var i = 0; i < veggies.length; i++) {
         console.log(i);
         console.log(vegPrompt);
@@ -46,19 +45,3 @@ function guessVeggies() {
     }
 }
 
-
-
-
-
-//if (veggies.includes(guessVeg)) {
-      //  console.log("user guessed some veggies");
-    //} else {
-      //  console.log('no good');
-    //}
-    /*for(i = 0; i < veggies.length; i++) {
-        var guessVeg = prompt('What kinds of delicious veggies do I have in my garden?');
-        console.log("user guessed some veggies");
-    }
-    var submitVeg = document.getElementById('veggies');
-    submitVeg.innerHTML = "Nom nom nom, thanks for playing";
-}*/

@@ -39,7 +39,7 @@ function guessVeggies() {
             break;
         } else {
             var goodGuess = document.getElementById("guessVeg");
-            goodGuess.innerHTML = "So tasty but not growing in my garden this year. click again to try another guess.";
+            goodGuess.innerHTML = "Not this year. click to try again.";
             console.log("user chose a vegetable that isn't in my garden");
         }
     }

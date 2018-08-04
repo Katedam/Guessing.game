@@ -26,6 +26,7 @@ h1 {
 }
 
 .list {
+    color: rgb(44, 109, 87);
     border-bottom: #FFFFFF 2px solid;
     border-radius: 50px;
 }

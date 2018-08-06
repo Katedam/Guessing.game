@@ -58,6 +58,13 @@ h2 {
     height: 200px;
 }
 
+#guessVeg.incorrect {
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    padding-top: 80px;
+}
+
 #number {
     width: 150px;
     height: 150px;
@@ -107,9 +114,5 @@ div.gallery img {
 
 .right {
     color: rgb(255, 255, 255);
-}
-
-footer {
-    
 }
 

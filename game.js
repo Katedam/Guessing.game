@@ -44,7 +44,9 @@ function guessVeggies() {
             break;
         } else {
             var goodGuess = document.getElementById("guessVeg");
-            goodGuess.innerHTML += "Not this year. click to try again.";
+            goodGuess.setAttribute("class", "incorrect");
+            goodGuess.innerHTML = "Not this year.";
+            goodGuess.innerHTML += "<input type='button' value='Try again!' onclick='guessTheNum()'>";
             console.log("user chose a vegetable that isn't in my garden");
         }
     }

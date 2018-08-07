@@ -46,7 +46,7 @@ function guessVeggies() {
             var goodGuess = document.getElementById("guessVeg");
             goodGuess.setAttribute("class", "incorrect");
             goodGuess.innerHTML = "Not this year.";
-            goodGuess.innerHTML += "<input type='button' value='Try again!' onclick='guessTheNum()'>";
+            goodGuess.innerHTML += "<input type='button' value='Try again!' onclick='guessVeggies()'>";
             console.log("user chose a vegetable that isn't in my garden");
         }
     }
